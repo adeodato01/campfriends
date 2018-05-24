@@ -34,6 +34,3 @@ def login(request):
             messages.error(request, error)
         return redirect('/login')
 
-
-
-
