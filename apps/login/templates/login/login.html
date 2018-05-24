@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Login/Registration</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         {% load static %}
         <!-- The line above tells Django to be ready to listen for static files -->
         <link rel="stylesheet" href="{% static 'login/css/style.css' %}">
@@ -24,23 +25,25 @@
                 {% endif %}
                 <form action="/processRegistration" method="post">
                 {% csrf_token %}
-                    <p>First name:<br>
-
-                    <input type="text" name="first_name" value=""></p>
-                    <p>Last name:<br>
-
-                    <input type="text" name="last_name" value=""></p>
-                    <p>Email:<br>
-
-                    <input type="text" name="email" value=""></p>
-
-                    <p>Password:<br>
-
-                    <input type="password" name="password1"></p>
-                    <p>Password should be at least 8 characters</p>
-                    <p>Confirm Password:<br>
-
-                    <input type="password" name="password2"></p>
+                    <div class="form-group">
+                        <label for="first_name">First name:</label>
+                        <input type="text" class="form-control" name="first_name" value="">
+                    </div>
+                    <div class="form-group">
+                        <label for="last_name">Last name:</label>
+                        <input type="text" class="form-control" name="last_name" value="">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="text" class="form-control" name="email" value="">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" class="form-control" name="password1" placeholder="Password should be at least 8 characters">
+                    <div class="form-goup">
+                        <label for="confirm_password">Confirm Password:</label>
+                        <input type="password" class="form-control" name="password2" placeholder="Password should be at least 8 characters"></p>
+                    </div>
                     <input type="submit" class="btn" value="Register">
                 </form>
             </section>
@@ -48,10 +51,14 @@
                 <h2>Login</h2>
                 <form action="/processLogin" method="post">
                 {% csrf_token %}
-                    <p>Email:<br>
-                    <input type="text" name="email"></p>
-                    <p>Password:<br>
-                    <input type="password" name="password3"></p>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="text" class="form-control" name="email" value="">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" class="form-control" name="password3">
+                    </div>
                     <input type="submit" class="btn" value="Login">
                 </form>
             </section>
