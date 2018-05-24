@@ -20,6 +20,9 @@ def add_info (request):
 def process_info (request):
 	return redirect('/info')
 
+def travels (request):
+	return render(request, 'campfriends/travels.html')
+
 def logout (request):
 	request.session.clear()
 	return redirect('/')
