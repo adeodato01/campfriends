@@ -2,9 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ff45720-61f2-44d2-aa6f-756202b2a2eb" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/apps/campfriends/templates/campfriends/travels.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/campfriends/templates/campfriends/add_info.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/campfriends/templates/campfriends/add_info.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/campfriends/templates/campfriends/info.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/campfriends/templates/campfriends/info.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/campfriends/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/campfriends/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/campfriends/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/campfriends/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/login/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/login/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/login/templates/login/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/login/templates/login/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/login/templates/login/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/login/templates/login/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/login/templates/login/test_map_click.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/login/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/login/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/login/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/login/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
@@ -23,8 +30,8 @@
           <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/apps/login/urls.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="162">
-                  <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
+                <state relative-caret-position="144">
+                  <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
                   <folding>
                     <element signature="e#0#32#0" expanded="true" />
                   </folding>
@@ -32,11 +39,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="test_map_click.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/apps/login/templates/login/test_map_click.html">
+          <file leaf-file-name="travels.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/apps/campfriends/templates/campfriends/travels.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-6">
-                  <caret line="200" column="7" lean-forward="true" selection-start-line="200" selection-start-column="7" selection-end-line="200" selection-end-column="7" />
+                <state relative-caret-position="54">
+                  <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
                 </state>
               </provider>
             </entry>
@@ -44,8 +51,8 @@
           <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/apps/login/views.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="566">
-                  <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+                <state relative-caret-position="548">
+                  <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
                   <folding>
                     <element signature="e#0#59#0" expanded="true" />
                   </folding>
@@ -67,7 +74,7 @@
             <entry file="file://$PROJECT_DIR$/apps/login/templates/login/index.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="288">
-                  <caret line="16" column="45" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
+                  <caret line="17" column="45" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
                 </state>
               </provider>
             </entry>
@@ -75,8 +82,8 @@
           <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/apps/login/templates/login/login.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="666">
-                  <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+                <state relative-caret-position="684">
+                  <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
                 </state>
               </provider>
             </entry>
@@ -100,8 +107,8 @@
           <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/apps/campfriends/urls.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="126">
-                  <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+                <state relative-caret-position="144">
+                  <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
                   <folding>
                     <element signature="e#0#32#0" expanded="true" />
                   </folding>
@@ -138,16 +145,17 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/apps/campfriends/templates/campfriends/test_map_click.html" />
         <option value="$PROJECT_DIR$/apps/login/templates/login/index.html" />
-        <option value="$PROJECT_DIR$/apps/login/urls.py" />
-        <option value="$PROJECT_DIR$/apps/login/views.py" />
         <option value="$PROJECT_DIR$/apps/campfriends/views.py" />
         <option value="$PROJECT_DIR$/apps/login/templates/login/test_map_click.html" />
+        <option value="$PROJECT_DIR$/apps/campfriends/templates/campfriends/travels.html" />
+        <option value="$PROJECT_DIR$/apps/login/urls.py" />
+        <option value="$PROJECT_DIR$/apps/login/views.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="121" />
-    <option name="y" value="-1012" />
+    <option name="x" value="158" />
+    <option name="y" value="-954" />
     <option name="width" value="1655" />
     <option name="height" value="860" />
   </component>
@@ -289,7 +297,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="123" y="-837" width="1655" height="860" extended-state="0" />
+    <frame x="158" y="-954" width="1655" height="860" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19109462" />
@@ -377,45 +385,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/login/templates/login/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="666">
-          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+        <state relative-caret-position="684">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/login/templates/login/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
-          <caret line="16" column="45" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
+          <caret line="17" column="45" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/campfriends/templates/campfriends/info.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/apps/campfriends/templates/campfriends/add_info.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/apps/login/templates/login/test_map_click.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6">
+        <state relative-caret-position="630">
           <caret line="200" column="7" lean-forward="true" selection-start-line="200" selection-start-column="7" selection-end-line="200" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/campfriends/templates/campfriends/travels.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/login/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/campfriends/templates/campfriends/add_info.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/campfriends/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        <state relative-caret-position="144">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
@@ -424,10 +429,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/login/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="566">
-          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+        <state relative-caret-position="548">
+          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
           <folding>
             <element signature="e#0#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/campfriends/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
           </folding>
         </state>
       </provider>

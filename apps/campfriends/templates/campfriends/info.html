@@ -8,10 +8,11 @@
 		<link rel="stylesheet" type="text/css" href="{% static 'campfriends/css/main.css' %}">
 	</head>
 	<body>
-		<h2>Hello USER VAR!</h2>
+		<h2>Hello {{request.session.first_name}}!</h2>
 		<a href="/campfriends/logout">logout</a>
 		<h1>Lcoation Name: loc_name VAR </h1>
-		<h3>Location Address: <a href="">loc_address VAR</a></h3>
+		<h4>Location Coordinates: latitude:<a href="">loc_latitude VAR</a>, longitude:<a href="">loc_longitude VAR</a></h4>
+		
 		<p>Description: desc VAR</p>
 
 		<input type="submit" name="map_button" value="To Map">

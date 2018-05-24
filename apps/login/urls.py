@@ -5,7 +5,4 @@ urlpatterns = [
     url(r'^login$', views.log_reg),
     url(r'^processRegistration$', views.registration),
     url(r'^processLogin$', views.login),
-    url(r'^travels$', views.landing),
-    url(r'^test$', views.test),
-    url(r'^addLocation$', views.location),
 ]
