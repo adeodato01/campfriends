@@ -15,7 +15,7 @@ def registration(request):
     result = User.objects.ValidateTheUser(request.POST)
     if result['status']:
         request.session['user_id'] = result['user_id']
-        return redirect('/travels')
+        return redirect('/campfriends/travels')
     else:
         print(result['errors'])
         for error in result['errors']:
@@ -27,7 +27,7 @@ def login(request):
     result = User.objects.ValidateLogin(request.POST)
     if result['status']:
         request.session['user_id'] = result['user_id']
-        return redirect('/travels')
+        return redirect('/campfriends/travels')
     else:
         print(result['errors'])
         for error in result['errors']:

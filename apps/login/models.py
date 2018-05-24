@@ -68,4 +68,4 @@ class User(models.Model):
     objects = UserManager()
 
     def __repr__(self):
-        return "<User object: name:{} username:{} id:{}>".format(self.name, self.username, self.id)
+        return "<User object: first name:{} last name:{} id:{}>".format(self.first_name, self.last_name, self.id)
