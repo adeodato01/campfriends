@@ -8,7 +8,7 @@
 		<link rel="stylesheet" type="text/css" href="{% static 'campfriends/css/main.css' %}">
 	</head>
 	<body>
-		<h2>Hello USER VAR!</h2>
+		<h2>Hello {{request.session.first_name}}!</h2>
 		<a href="/campfriends/logout">logout</a>
 		<form action="/process_info" method='post' name='add_info_form'>
 			{% csrf_token %}
