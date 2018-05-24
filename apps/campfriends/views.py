@@ -10,6 +10,9 @@ def add_info (request):
 	return render(request, 'campfriends/add_info.html')
 
 def process_info (request):
+	print('\n''\n'"************THIS Map CLICK!**********")
+	print(request.POST)
+	print("*****************************"'\n''\n')
 	return redirect('/info')
 
 def logout (request):

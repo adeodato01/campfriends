@@ -35,5 +35,13 @@ def login(request):
         return redirect('/login')
 
 
+def test(request):
+    return render(request, 'login/test_map_click.html')
+
+def location(request):
+    print('\n''\n'"************THIS Map CLICK!**********")
+    print(request.POST)
+    print("*****************************"'\n''\n')
+    return HttpResponse('Okay!')
 
 
