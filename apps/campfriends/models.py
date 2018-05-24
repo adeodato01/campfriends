@@ -2,6 +2,8 @@ from __future__ import unicode_literals
 from django.db import models
 from django.contrib import messages
 
+from ..login.models import User
+
 class LocationManager(models.Manager):
 	def basic_validator(self, postData):
 		response = {
@@ -16,7 +18,8 @@ class LocationManager(models.Manager):
 			response['status'] = True
 			# create info here
 			# loc_name= postData['loc_name'],
-			# loc_address= postData['loc_address'],
+			# loc_latitude= postData['loc_latitude'],
+			# loc_longitude= postData['loc_longitude']
 			# desc= postData['desc']
 
 				
@@ -26,8 +29,10 @@ class LocationManager(models.Manager):
 
 class Location(models.Model):
 	loc_name= models.CharField(max_length=255)
-	loc_address= models.CharField(max_length=255)
-	desc=models.TextField(max_length=1000)
+	loc_latitude= models.CharField(max_length=255)
+	loc_longitude= models.CharField(max_length=255)
+	desc= models.TextField(max_length=1000)
+	creator= models.ForeignKey(User, related_name= 'created_camps')
 	created_at= models.DateTimeField(auto_now_add = True)
 	updated_at= models.DateTimeField(auto_now = True)
 	objects = LocationManager()
