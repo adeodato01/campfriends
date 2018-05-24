@@ -9,7 +9,7 @@
 	</head>
 	<body>
 		<h2>Hello USER VAR!</h2>
-		<a href="">logout</a>
+		<a href="/campfriends/logout">logout</a>
 		<form action="/process_info" method='post' name='add_info_form'>
 			{% csrf_token %}
 			<div class="form-group">
@@ -17,8 +17,12 @@
 		    	<input type="text" class="form-control" id="loc_name" name="loc_name" value='{{loc_name}}'>
 	  		</div>
 	  		<div class="form-group">
-		    	<label for="loc_address">Location: (needs to pull from map?)</label>
-		    	<input type="text" class="form-control" id="loc_address" name="loc_address" value='{{loc_address}}'>
+		    	<label for="loc_latitude">Location Latitude: (needs to pull from map?)</label>
+		    	<input type="text" class="form-control" id="loc_latitude" name="loc_latitude" value='{{loc_latitude}}'>
+	  		</div>
+	  		<div class="form-group">
+		    	<label for="loc_longitude">Location Longitude: (needs to pull from map?)</label>
+		    	<input type="text" class="form-control" id="loc_longitude" name="loc_longitude" value='{{loc_longitude}}'>
 	  		</div>
 	  		<div class="form-group">
 		    	<label for="desc">Description:</label>

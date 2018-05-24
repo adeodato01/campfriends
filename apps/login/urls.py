@@ -6,4 +6,5 @@ urlpatterns = [
     url(r'^processRegistration$', views.registration),
     url(r'^processLogin$', views.login),
     url(r'^travels$', views.landing),
+   
 ]

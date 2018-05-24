@@ -11,3 +11,7 @@ def add_info (request):
 
 def process_info (request):
 	return redirect('/info')
+
+def logout (request):
+	# request.session.clear()
+	return redirect('/')

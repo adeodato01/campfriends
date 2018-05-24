@@ -35,6 +35,5 @@ def login(request):
         return redirect('/login')
 
 
-def landing(request):
-    return HttpResponse("This will be the campground page")
+
 
