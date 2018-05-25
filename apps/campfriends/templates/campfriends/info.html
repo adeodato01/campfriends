@@ -10,12 +10,10 @@
 	<body>
 		<h2>Hello {{request.session.first_name}}!</h2>
 		<a href="/campfriends/logout">logout</a>
-		<h1>Lcoation Name: loc_name VAR </h1>
-		<h4>Location Coordinates: latitude:<a href="">loc_latitude VAR</a>, longitude:<a href="">loc_longitude VAR</a></h4>
-		
-		<p>Description: desc VAR</p>
-
-		<input type="submit" name="map_button" value="To Map">
-
+		<h1>Lcoation Name: {{loc_name}} </h1>
+		<p>Description: {{desc}}</p>
+		<form action='/campfriends/travels'>
+			<input type="submit" name="map_button" value="To Map">
+		</form>
 	</body>
 </html>
