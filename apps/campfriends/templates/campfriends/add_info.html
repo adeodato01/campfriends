@@ -10,7 +10,7 @@
 	<body>
 		<h2>Hello {{request.session.first_name}}!</h2>
 		<a href="/campfriends/logout">logout</a>
-		<form action="/process_info" method='post' name='add_info_form'>
+		<form action="/campfriends/process_info" method='post' name='add_info_form'>
 			{% csrf_token %}
 			<div class="form-group">
 		    	<label for="loc_name">Location Name:</label>

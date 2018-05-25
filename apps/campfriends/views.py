@@ -22,7 +22,7 @@ def process_info (request):
 	print('\n''\n'"************THIS Map CLICK!**********")
 	print(request.POST)
 	print("*****************************"'\n''\n')
-	return redirect('/info')
+	return redirect('/campfriends/info')
 
 def travels (request):
 	return render(request, 'campfriends/travels.html')
