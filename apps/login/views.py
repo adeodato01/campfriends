@@ -6,6 +6,8 @@ from django.contrib import messages
 def landing(request):
     return render(request, "login/index.html")
 
+def enter(request):
+    return render(request, "login/login.html")
 
 def log_reg(request):
     return render(request, "login/login.html")
