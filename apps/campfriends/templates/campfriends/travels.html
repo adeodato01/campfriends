@@ -187,9 +187,9 @@
       // }); //Put a marker in Federal Way
 
 
-      var infoWindow = new google.maps.InfoWindow({
-        content:'<a href="/campfriends/add_info"><h1 placeholder="your_name_of_place">name of place</h1></a>'
-      }); //Put a pop up window in Federal Way
+      // var infoWindow = new google.maps.InfoWindow({
+      //   content:'<a href="/campfriends/add_info"><h1 placeholder="your_name_of_place">name of place</h1></a>'
+      // }); //Put a pop up window in Federal Way
 
       // marker.addListener('click', function(){
       //   infoWindow.open(map, marker);
@@ -201,13 +201,16 @@
       // }); //
 
       function addMarker(coords){
+        var infoWindow = new google.maps.InfoWindow({
+          // content:'<form action="/campfriends/add_info" method="post">{% csrf_token %}<input type="hidden" name="location" value="'+coords+'"/><input type="submit" value="Click to add"/></form>'
+        });
         var marker = new google.maps.Marker({
           position:coords,
           map:map,
         });
         marker.addListener('click', function(){
           infoWindow.open(map, marker);
-      }); // Don't know why this doesn't add an info window BUT it adds a new red marker anywhere in the Map
+      }); // This works
       };
 
       // addMarker({lat:47.577700,lng:-122.385895});
