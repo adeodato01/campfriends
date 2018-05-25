@@ -11,7 +11,9 @@ def info (request):
 	return render(request, 'campfriends/info.html')
 
 def add_info (request, location):
+	print('\n''\n'"************THIS Map CLICK!**********")
 	print(location)
+	print("*****************************"'\n''\n')
 	if "user_id" not in request.session:
 		return redirect('/login')
 	user=User.objects.get(id=request.session['user_id'])
@@ -19,9 +21,9 @@ def add_info (request, location):
 	return render(request, 'campfriends/add_info.html')
 
 def process_info (request):
-	print('\n''\n'"************THIS Map CLICK!**********")
-	print(request.POST)
-	print("*****************************"'\n''\n')
+	# print('\n''\n'"************THIS Map CLICK!**********")
+	# print(request.POST)
+	# print("*****************************"'\n''\n')
 	return redirect('/campfriends/info')
 
 def travels (request):

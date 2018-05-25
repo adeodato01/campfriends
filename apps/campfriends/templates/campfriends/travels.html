@@ -9,7 +9,7 @@
        * element that contains the map. */
       #map {
         height: 400px;
-        width: 800px;
+        width: 600px;
       }
       /* Optional: Makes the sample page fill the window. */
       html, body {
@@ -26,7 +26,8 @@
 
         var map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: 47.612, lng: -122.3073},
-          zoom: 9,
+          zoom: 8,
+          streetViewControl: false,
           styles: [
           {elementType: 'geometry', stylers: [{color: '#ebe3cd'}]},
               {elementType: 'labels.text.fill', stylers: [{color: '#523735'}]},
@@ -204,8 +205,8 @@
         var infoWindow = new google.maps.InfoWindow({ 
           // content:'<form action="/campfriends/add_info" method="post">{% csrf_token %}<input type="hidden" name="location" value="'+x+'"/><input type="submit" value="Click to add"/></form>'
           // content: '<a href="/campfriends/add_info/'+x+'"><h1>Click here to add</h1></a>'
-          // content: '<a href="/campfriends/add_info/lat:'+x+',lng:'+y+'"><h1>Click here to add</h1></a>'
-          content: '<a href="/campfriends/add_info/'+x+','+y+'"><h1>Click here to add</h1></a>'
+          content: '<a href="/campfriends/add_info/lat:'+x+',lng:'+y+'"><h1>Click here to add</h1></a>'
+          // content: '<a href="/campfriends/add_info/'+x+','+y+'"><h1>Click here to add</h1></a>'
         });
         var marker = new google.maps.Marker({
           position:coords,
