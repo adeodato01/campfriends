@@ -200,9 +200,11 @@
       //   addMarker()
       // }); //
 
-      function addMarker(coords){
-        var infoWindow = new google.maps.InfoWindow({
-          // content:'<form action="/campfriends/add_info" method="post">{% csrf_token %}<input type="hidden" name="location" value="'+coords+'"/><input type="submit" value="Click to add"/></form>'
+      function addMarker(coords, x, y){
+        var infoWindow = new google.maps.InfoWindow({ 
+          // content:'<form action="/campfriends/add_info" method="post">{% csrf_token %}<input type="hidden" name="location" value="'+x+'"/><input type="submit" value="Click to add"/></form>'
+          // content: '<a href="/campfriends/add_info/'+x+'"><h1>Click here to add</h1></a>'
+          content: '<a href="/campfriends/add_info/'+x+'+'+y+'"><h1>Click here to add</h1></a>'
         });
         var marker = new google.maps.Marker({
           position:coords,
@@ -223,10 +225,12 @@
       google.maps.event.addListener(map, "click", function (event) {
         var latitude = event.latLng.lat();
         var longitude = event.latLng.lng();
-        console.log("lat:"+latitude+",lng:"+longitude);
-        console.log (latitude);
-        console.log (longitude);
-        addMarker({lat:latitude,lng:longitude});
+        // console.log("lat:"+latitude+",lng:"+longitude);
+        var x = "lat:"+latitude+",lng:"+longitude;
+        console.log(x);
+        // console.log (latitude);
+        // console.log (longitude);
+        addMarker({lat:latitude,lng:longitude}, latitude, longitude);
 
 
 

@@ -10,7 +10,8 @@ def info (request):
 	request.session['first_name']=user.first_name
 	return render(request, 'campfriends/info.html')
 
-def add_info (request):
+def add_info (request, location):
+	print(location)
 	if "user_id" not in request.session:
 		return redirect('/login')
 	user=User.objects.get(id=request.session['user_id'])
