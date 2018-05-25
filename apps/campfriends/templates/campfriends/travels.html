@@ -204,7 +204,8 @@
         var infoWindow = new google.maps.InfoWindow({ 
           // content:'<form action="/campfriends/add_info" method="post">{% csrf_token %}<input type="hidden" name="location" value="'+x+'"/><input type="submit" value="Click to add"/></form>'
           // content: '<a href="/campfriends/add_info/'+x+'"><h1>Click here to add</h1></a>'
-          content: '<a href="/campfriends/add_info/'+x+'+'+y+'"><h1>Click here to add</h1></a>'
+          // content: '<a href="/campfriends/add_info/lat:'+x+',lng:'+y+'"><h1>Click here to add</h1></a>'
+          content: '<a href="/campfriends/add_info/'+x+','+y+'"><h1>Click here to add</h1></a>'
         });
         var marker = new google.maps.Marker({
           position:coords,
